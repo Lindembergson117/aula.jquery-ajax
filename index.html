@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+
+    <title>jQuery aula</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand">Consulta Cep</a>
+            <div class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="CEP" aria-label="CEP" id="cep">
+                <button class="btn btn-outline-success" onclick="consultarCep()">Buscar</button>
+            </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container cep" style="margin-top:15px">
+        <div class="row">
+            <h3 id="titulo_cep">CEP</h3>
+        </div>
+        <div class="row">
+            <table class="table" style="margin-top:20px;">
+                <tbody>
+                    <tr>
+                        <td>Logradouro</td>
+                        <td id="logradouro"></td>
+                    </tr>
+                    <tr>
+                        <td>Complemento</td>
+                        <td id="complemento"></td>
+                    </tr>
+                    <tr>
+                        <td>Bairro</td>
+                        <td id="bairro"></td>
+                    </tr>
+                    <tr>
+                        <td>Localidade</td>
+                        <td id="localidade"></td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>
